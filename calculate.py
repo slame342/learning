@@ -1,0 +1,1 @@
+def calc(number1, number2, operations):
