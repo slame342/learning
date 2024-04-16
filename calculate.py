@@ -1,3 +1,5 @@
+# доделать выделение корня!!!
+
 def calc(number1, number2, operations):
     if operations == "+":
         return number1 + number2
@@ -12,12 +14,18 @@ def calc(number1, number2, operations):
             return number1 / number2
         else:
             print('Error!')
-            return 0
+            return print("на нуль делить нельзя!!!")
     if operations == "//":
         if number2 != 0:
             return number1 // number2
         else:
             print('Error!')
+            return 0
+    if operations == "%":
+        if number2 != 0:
+            return number1 % number2
+        else:
+            print('Error! вы ввели нуль')
             return 0
 
 
@@ -33,4 +41,5 @@ result = calc(33, 0, "/")
 print(result)
 result = calc(33, 2, "//")
 print(result)
-
+result = calc(33, 0, "%")
+print(result)
