@@ -68,3 +68,14 @@ print(var_12 < var_13) # оператор сравнения
 print(var_12 <= var_13) # оператор сравнения
 print(var_12 != var_13) # оператор сравнения
 
+value_bool_1 = True
+
+if value_bool_1:
+    print('Правда 1')
+
+value_bool_2 = False
+
+if value_bool_2:
+    print("Правда 2")
+else:
+    print("Ложь 2")

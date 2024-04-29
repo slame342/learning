@@ -22,9 +22,9 @@ with open('file.txt') as file:  # псевдоним
 
     # text1 = text[начало:конец:шаг]
 
-    # text = "Pellentesque"
-    # text1 = text[3::1]  # обрезает строку в обычной последовательности от 3 символа до
-    # print(text1)
+    text = "Pellentesque"
+    text1 = text[3::1]  # обрезает строку в обычной последовательности от 3 символа до
+    print(text1)
 
     # text = "Pellentesque"
     # text1 = text[3:10:1]  # обрезает строку в обычной последовательности от 3 до 10 символа
@@ -63,6 +63,7 @@ print(newlist)
 with open('src/dist/new_file1.txt', 'a', encoding='utf-8') as file:
     list_1 = ['Астана', 'Караганда', 'Чимкент', 'Актюбинск', 'Астана', 'Караганда', 'Чимкент', 'Актюбинск']
     file.writelines([f'{city}\n' for city in list_1])
+    print(list_1)
 
 # обработка через цикл
 # with open('src/dist/new_file1.txt', 'a', encoding='utf-8') as file:
@@ -83,7 +84,7 @@ new_text = " "
 #     new = index%2
 #     new_char = ' '
 #     if new == 0:
-#         new_char =
+#         new_char = f"1{char}".join('')
 #         new_text += new_char
 # print(new_text)
 
@@ -92,9 +93,9 @@ new_list1 = [f"1{char}" for char in text if text.index(char) % 2 != 0]
 
 print(' '.join(new_list1))
 
-# практическое задание 4.1
+# практическое задание 4.2
 # list_1 = ['Астана', 'Караганда', 'Чимкент', 'Актюбинск']
-# print(list_1[::-1])
+# print(len(list_1))
 
 # практическое задание 4.2
 # list_1 = ['Астана', 'Караганда', 'Чимкент', 'Актюбинск']
