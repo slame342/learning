@@ -1,6 +1,6 @@
 # boolean -логическая переменная
 # var_bool1 = True  # булева переменная - правда/ложь
-# var_bool2 = False  # булевая переменная - правда/ложь
+# var_bool2 = False  # булева переменная - правда/ложь
 # var_bool3 = bool(0)  # False
 # var_bool4 = bool('0')  # True
 # print(type(var_bool4), var_bool4)

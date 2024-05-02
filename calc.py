@@ -12,5 +12,5 @@ def calc(number1=10, operation='/', number2=3):
 result = calc()
 print(result)
 
-result = calc(operation="/", number2=3, number1=10)  # именованые аргументы
+result = calc(operation="/", number2=3, number1=10)  # именованные аргументы
 print(result)

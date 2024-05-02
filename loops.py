@@ -1,5 +1,5 @@
 # 0   1  2    3
-from logic_operations import var_1
+
 
 # var_list1 = [12, 0, 16, 8, '1234', -100, True]  # массив переменных
 #
@@ -35,25 +35,25 @@ from logic_operations import var_1
 # print('цикл завершен!')
 
 
-# list_1 = ['Астана', 'Караганда', 'Чимкент', 'Актюбинск']
-#
-# index_i = 0
-# for i in list_1:
-#     print(i + " " + str(list_1.index(i) + 1))
-# index_i += 1
-# string_city = f"{i} {list_1.index(i) + 1}"
-# print(string_city)
-# # print('i' + " " + str(list_1.index('i') + 1))
+list_1 = ['Астана', 'Караганда', 'Чимкент', 'Актюбинск']
+
+index_i = 0
+for i in list_1:
+    print(i + " " + str(list_1.index(i) + 1))
+index_i += 1
+string_city = f"{i} {list_1.index(i) + 1}"
+print(string_city)
+# print('i' + " " + str(list_1.index('i') + 1))
 
 
 # TODO циклы
-# for i in [2, 3, 4, 5, 6]:
-#     print(i)
+for i in [2, 3, 4, 5, 6]:
+    print(i)
 
 str_value_1 = "Many яблок"
 
-# for char_element in str_value_1:
-#     print(char_element)
+for char_element in str_value_1:
+    print(char_element)
 
 print('разделение')
 
@@ -63,7 +63,16 @@ for first_loop in str_value_2:
     for second_loop in first_loop:
         print(second_loop)
 
-
+while_continue = True
+index = 0
+while while_continue:
+    index = index + 2
+    print(index)
+    # index += 2
+    if index >= 30:
+        # break
+        while_continue = False
+print("#############################")
 # # практическое задание с циклами 1
 # list_2 = [input('введите число 1: '), input('введите число 2: ')]
 #
@@ -74,7 +83,7 @@ for first_loop in str_value_2:
 # list_3 = [input('введите число 1: '), input('введите число 2: ')]
 # # list_3 = [15, 14]
 # for i in list_3:
-#     if int(i) % 2 >= 0:
+#     if int(i) % 2 != 0:
 #         print(str(i) + ' ' + 'нечетное число')
 #
 # # практическое задание с циклами 3
@@ -86,4 +95,33 @@ for first_loop in str_value_2:
 
 # практическое задание с циклами 4
 # list_5 = [input('введите число 1: '), input('введите число 2: ')]
-# list_5 = [12, 43]
+# list_5 = [43, 12]
+# list_5 = [7, 3, 9, 2, 1]
+#
+# temp = 0
+# for i in range(0, len(list_5)):
+#     for j in range(i + 1, len(list_5)):
+#         if list_5[i] > list_5[j]:
+#             temp = list_5[i]
+#             list_5[i] = list_5[j]
+#             list_5[j] = temp
+# print(list_5)
+
+
+# практическое задание с циклами 5
+list_6 = [43, 11]
+# list_6 = [7, 3, 9, 2, 1]
+# list_6 = [input('введите число 1: '), input('введите число 2: ')]
+temp = 0
+for i in range(0, len(list_6)):
+    for j in range(i + 1, len(list_6)):
+        if list_6[i] > list_6[j]:
+            temp = list_6[i]
+            list_6[i] = list_6[j]
+            list_6[j] = temp
+print(list_6)
+for list_elem in list_6:
+    if int(list_elem) % 2 != 0:
+        print(str(list_elem) + ' ' + 'нечетное число')
+
+
